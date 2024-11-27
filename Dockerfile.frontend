@@ -9,8 +9,10 @@ COPY . .
 
 # Go to project dir
 RUN pwd
+RUN ls
 RUN cd web_ui
 RUN pwd
+RUN ls
 
 # Install dependencies
 RUN npm install
