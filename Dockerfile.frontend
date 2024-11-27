@@ -8,7 +8,9 @@ WORKDIR /app
 COPY . .
 
 # Go to project dir
+RUN pwd
 RUN cd web_ui
+RUN pwd
 
 # Install dependencies
 RUN npm install
