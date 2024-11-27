@@ -10,8 +10,8 @@ COPY web_backend .
 # Install app dependencies
 RUN npm install
 
-# Build the application
-RUN npm run build
+# # Build the application
+# RUN npm run build
 
 # Expose the port the app runs on
 EXPOSE 3000
