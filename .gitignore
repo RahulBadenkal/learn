@@ -1,1 +1,4 @@
 web_backend/node_modules
+web_backend/.env
+web_ui/.env
+

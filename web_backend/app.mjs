@@ -1,9 +1,11 @@
+import "./setup-env.mjs"
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { pool } from "./db.mjs";
 
 const app = express();
+
 
 // Middleware
 app.use(cors()); // Enables CORS for all routes
@@ -37,4 +39,4 @@ app.post('/submit', async (req, res) => {
 })
 
 
-app.listen(3000)  // :3000
+app.listen(process.env.PORT || 3000)

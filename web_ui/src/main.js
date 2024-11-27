@@ -1,8 +1,8 @@
-const BASE_URL = `http://localhost:3000`
+import {BACKEND_BASE_URL} from "./constants"
 
 const getData = async () => {
   console.log("Fetching data")
-  const url = BASE_URL + "/"
+  const url = BACKEND_BASE_URL + "/"
   const response = await fetch(url)
   const data = await response.json()
   console.log(data)
@@ -10,7 +10,7 @@ const getData = async () => {
 
 const submitData = async () => {
   console.log("Fetching data")
-  const url = BASE_URL + "/submit"
+  const url = BACKEND_BASE_URL + "/submit"
   const newScore = {
     name: "Aanand",
     varc: {
