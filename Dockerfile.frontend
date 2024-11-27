@@ -13,6 +13,9 @@ RUN cd web_ui
 # Install dependencies
 RUN npm install
 
+RUN pwd
+RUN cat package.json
+
 # Define build argument to inject during the build stage
 ARG VITE_BACKEND_BASE_URL
 
