@@ -9,7 +9,7 @@ const getData = async () => {
 }
 
 const submitData = async () => {
-  console.log("Fetching data")
+  console.log("Submitting data")
   const url = BACKEND_BASE_URL + "/submit"
   const newScore = {
     name: "Aanand",
