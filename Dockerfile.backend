@@ -2,13 +2,10 @@
 FROM node:alpine
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /app/web_backend
 
 # Copy application code
-COPY . .
-
-# Go to project root dir
-RUN cd web_backend
+COPY web_backend .
 
 # Install app dependencies
 RUN npm install
