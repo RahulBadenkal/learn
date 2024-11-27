@@ -30,6 +30,7 @@ COPY --from=build /app/web_ui/dist /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy custom NGINX configuration
+RUN cd ../
 COPY nginx.frontend.conf /etc/nginx/conf.d/nginx.conf
 
 # Expose port 80
